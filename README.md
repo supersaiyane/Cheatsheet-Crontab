@@ -19,13 +19,21 @@ The Cron daemon is a service that runs on all main distributions of Unix and Lin
 #    +------------------------------------- min (0-59)
 ```
 
+|Field	| Range	| Special characters|
+|-------|--------|------------------|
+| Minute	| 0 - 59	|, - * / |
+| Hour	|0 - 23	|, - * / |
+| Day of Month	|1 - 31	|, - * ? / L W |
+| Month	|1 - 12	|, - * / |
+| Day Of Week	|0 - 6	|, - * ? / L # |
+
 # Example
 ```
-0 * * * *	    every hour
-*/15 * * * *	every 15 mins
-0 */2 * * *	  every 2 hours
-0 0 * * 0	    every Sunday midnight
-@reboot	      every reboot
+0 * * * *	        every hour
+*/15 * * * *	    every 15 mins
+0 */2 * * *	      every 2 hours
+0 0 * * 0	        every Sunday midnight
+@reboot	          every reboot
 ```
 
 
