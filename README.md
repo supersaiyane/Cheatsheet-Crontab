@@ -84,6 +84,29 @@ The Cron daemon is a service that runs on all main distributions of Unix and Lin
 |@hourly	|Run once an hour, “0 * * * *”|
 
 
+### list
+List crontab:
+```sh
+$ crontab -l
+```
+
+### edit
+Edit crontab:
+```sh
+$ crontab -e
+```
+
+### To open crontab with a preferred editor like `nano`:
+```sh
+$ EDITOR=nano crontab -e
+```
+
+### remove
+Remove crontab:
+```sh
+$ crontab -r
+```
+
 ### Examples
 
 #### General format 
