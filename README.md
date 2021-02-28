@@ -19,6 +19,19 @@ The Cron daemon is a service that runs on all main distributions of Unix and Lin
 #    +------------------------------------- min (0-59)
 ```
 
+
+# Example
+|Expression | Representation |
+|-------|--------|
+| 0 * * * *	  |      every hour |
+| */15 * * * *	|    every 15 mins |
+| 0 */2 * * *	   |   every 2 hours |
+| 0 */2 * * *	   |   every 2 hours |
+| 0 0 * * 0	      |  every Sunday midnight 
+| @reboot	        |  every reboot |
+
+
+
 |Field	| Range	| Special characters|
 |-------|--------|------------------|
 | Minute	| 0 - 59	|, - * / |
@@ -57,13 +70,6 @@ The Cron daemon is a service that runs on all main distributions of Unix and Lin
 |Question mark (?)	| Can be instead of '*' and allowed for Day of Month and Day Of Week. Usage is restricted to either Day of Month or Day Of Week in a cron expression.|
 
 
-# Example
-```
-0 * * * *	        every hour
-*/15 * * * *	    every 15 mins
-0 */2 * * *	      every 2 hours
-0 0 * * 0	        every Sunday midnight
-@reboot	          every reboot
-```
+
 
 
